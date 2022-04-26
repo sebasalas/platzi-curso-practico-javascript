@@ -49,6 +49,7 @@ console.groupEnd();
 
 // Aquí interactuamos con el HTML
 
+// Interacción Cuadrado
 function calcularPerimetroCuadrado(){
     const input = document.getElementById("InputCuadrado")
     const value = input.value;
@@ -62,5 +63,46 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
+    alert(area);    
+}
+
+// Interacción Triángulo
+function calcularPerimetroTriangulo(){
+    const lado1 = document.getElementById("InputTrianguloLado1")
+    const lado2 = document.getElementById("InputTrianguloLado2")
+    const base = document.getElementById("InputTrianguloBase")
+    const valorlado1 = lado1.valueAsNumber;
+    const valorlado2 = lado2.valueAsNumber;
+    const valorbase = base.valueAsNumber;
+
+    const perimetro = perimetroTriangulo(valorlado1, valorlado2, valorbase);
+    alert(perimetro);    
+}
+
+function calcularAreaTriangulo(){
+    const base = document.getElementById("InputTrianguloBase")
+    const altura = document.getElementById("InputTrianguloAltura")
+    const valorbase = base.value;
+    const valoraltura = altura.value;
+
+    const area = areaTriangulo(valorbase, valoraltura);
+    alert(area);    
+}
+
+
+// Interacción Círculo
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("InputCirculoRadio")
+    const value = input.value;
+
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);    
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("InputCirculoRadio")
+    const value = input.value;
+
+    const area = areaCirculo(value);
     alert(area);    
 }
