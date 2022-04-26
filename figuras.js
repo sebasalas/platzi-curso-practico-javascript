@@ -46,6 +46,21 @@ function areaCirculo(radio){
 
 console.groupEnd();
 
+//Código del triángulo isósceles
+console.group("Triángulo Isósceles");
+
+function alturaTrianguloIso(lado1, lado2, base){
+    if (lado1 === lado2 && lado1 != base) {
+        console.log("El triángulo es isósceles");
+        const altura = Math.sqrt(lado1 * lado1 - ((base * base)/4));
+        console.log("La altura del triángulo es: " + altura);
+    }else{
+        console.log("El triángulo no es isósceles")
+    }
+}
+
+console.groupEnd();
+
 
 // Aquí interactuamos con el HTML
 
