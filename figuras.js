@@ -33,7 +33,7 @@ function diametroCirculo(radio){
 
 //PI
 const PI = Math.PI;
-console.log("PI es: " + PI);
+//console.log("PI es: " + PI);
 
 function perimetroCirculo(radio){
     const diametro = diametroCirculo(radio);
@@ -45,3 +45,22 @@ function areaCirculo(radio){
 }
 
 console.groupEnd();
+
+
+// Aquí interactuamos con el HTML
+
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("InputCuadrado")
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);    
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("InputCuadrado")
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);    
+}
